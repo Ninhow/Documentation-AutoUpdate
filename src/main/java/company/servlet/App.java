@@ -1,4 +1,4 @@
-package csn.servlet;
+package company.servlet;
 
 import java.io.IOException;
 
