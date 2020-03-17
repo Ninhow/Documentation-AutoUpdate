@@ -1,0 +1,16 @@
+<server description="Sample Servlet server">
+    <featureManager>
+        <feature>servlet-4.0</feature>
+    </featureManager>
+
+    <variable name="default.http.port" defaultValue="9090"/>
+    <variable name="default.https.port" defaultValue="9443"/>
+    <variable name="app.context.root" defaultValue="ProjectTemplate"/>
+
+    <!-- tag::httpEndpoint[] -->
+    <httpEndpoint httpPort="${default.http.port}" 
+    httpsPort="${default.https.port}" id="defaultHttpEndpoint"  host="*" />
+    <!-- end::httpEndpoint[] -->
+    <!--ProjectTemplate är -->
+    <webApplication id="ProjectTemplate" location="ProjectTemplate.war" contextRoot="${app.context.root}" />
+</server>
